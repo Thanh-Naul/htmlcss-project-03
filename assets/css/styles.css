@@ -12,3 +12,86 @@ body {
 }
 
 /* Common */
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 108px;
+    height: 48px;
+    color: #1ebfc1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Độ rộng trình duyệt nhỏ hơn độ rộng content thì sẽ hiện thanh cuộn */
+
+/* xử lý: để độ rộng thêm max-width: 100% để trình duyệt ăn theo độ rộng đó*/
+
+/* Nếu độ rộng trình duyệt nhỏ hơn thì sẽ ăn theo 100% của độ rộng Trình duyệt */
+
+/* Khi bạn thấy khi để 100% mất khoảng cách trái phải thì lúc này dùng tính toán */
+
+/* calc(100% - 48px) : trái: 24px + phải: 24px = 48px lúc này khoảng cách  */
+
+/* Khoảng cách trái phải sẽ dư ra mỗi bên 24px */
+.main-content {
+    width: 1440px;
+    max-width: calc(100% - 48px);
+    /* căn giữa */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header {
+    background: #fff;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav {
+    margin-left: 235px;
+    margin-right: 177px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    /* tăng vùng bấm là 8px khoảng cách các thẻ a là 39 / 2 */
+    padding: 8px 20px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.nav a:hover {
+    color: #2f3a3b;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action-link {
+    margin-right: 24px;
+    color: #494949;
+}
+
+.header .action-btn:active {
+    color: #fff;
+    background-color: #1ebfc1;
+}
