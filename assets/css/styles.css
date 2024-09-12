@@ -116,7 +116,7 @@ a {
     /* khoảng padding top 65 lúc .header body chúng ta cho là 8px
     vì thế lấy 65px -8px = 57px */
     padding: 57px 0 65px;
-    background: #b1d2cf;
+    background: #fff;
 }
 
 .hero .body {
@@ -135,14 +135,62 @@ bên phải hiện có độ rộng là 641x631
 Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
 
 .hero .media-block {
+    position: relative;
     width: 55%;
 }
 
 .hero .media-block .img {
-    display: inline-block;
-    width: 576px;
+    width: 100%;
     height: 631px;
     object-fit: cover;
+    vertical-align: baseline;
+}
+.hero .media-block .sumary-1 {
+    /*  căn vào ảnh dùng position: absolute */
+    display: flex;
+    position: absolute;
+    padding: 17px 25px 18px;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    align-items: center;
+    background: #fefefd;
+    border-radius: 18px;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* .hero .sumary-1.sumary-one {
+    position: relative;
+    display: flex;
+    width: 36px;
+    height: 40px;
+} */
+
+.sumary-1 a::after {
+    position: absolute;
+    content: "";
+    bottom: 26px;
+    left: 29px;
+    width: 28px;
+    height: 4px;
+    border-radius: 99px;
+    background: #fff;
+}
+
+.sumary-1 .title {
+    display: inline-block;
+    margin-left: 16px;
+    width: 55px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+.hero .media-block .sumary-3 {
+    position: absolute;
 }
 
 .hero .sumary-3 .avatar {
