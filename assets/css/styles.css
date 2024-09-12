@@ -95,3 +95,45 @@ a {
     color: #fff;
     background-color: #1ebfc1;
 }
+
+/* Hero */
+
+.hero {
+    padding: 50px 0 79px;
+}
+.hero .body {
+    display: flex;
+}
+
+/* Content-block */
+
+.hero .content-block {
+    width: 52%;
+    padding: 143px 0 9px;
+}
+
+.hero .content-block .desc {
+    width: 34%;
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .content-block .heading {
+    margin: 18px 0 46px;
+    width: 456px;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.2; /* 116.129% */
+}
+
+/* Media-block */
+.hero .media-block {
+    width: 42%;
+}
+
+.hero .media-block .logo {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
