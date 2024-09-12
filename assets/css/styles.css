@@ -47,7 +47,7 @@ a {
 
 /* Khoảng cách trái phải sẽ dư ra mỗi bên 24px */
 .main-content {
-    width: 1440px;
+    width: 1170px;
     max-width: calc(100% - 48px);
     /* căn giữa */
     margin-left: auto;
@@ -55,8 +55,15 @@ a {
 }
 
 /* Header */
+
 .header {
-    background: #fff;
+    background: orange;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
 }
 
 .header .body {
@@ -66,12 +73,20 @@ a {
 }
 
 .nav {
-    margin-left: 235px;
-    margin-right: 177px;
+    margin-left: auto;
+    /* do .nav a  chúng ta padding trái phải là 21px giờ cộng thêm cho 156px = 177px */
+    margin-right: 156px;
 }
 
 .nav ul {
     display: flex;
+}
+
+.nav li.active a {
+    /* font-weight: 600; khi hover nó sẽ giật những chữ xung quanh */
+    /* biện pháp dùng bóng đổ box-shadow */
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
 }
 
 .nav a {
@@ -97,43 +112,42 @@ a {
 }
 
 /* Hero */
-
 .hero {
-    padding: 50px 0 79px;
+    /* khoảng padding top 65 lúc .header body chúng ta cho là 8px
+    vì thế lấy 65px -8px = 57px */
+    padding: 57px 0 65px;
+    background: #b1d2cf;
 }
+
 .hero .body {
     display: flex;
 }
 
-/* Content-block */
+/* Hero left */
 
 .hero .content-block {
-    width: 52%;
-    padding: 143px 0 9px;
+    width: 45%;
 }
+/* hero right */
 
-.hero .content-block .desc {
-    width: 34%;
-    color: #767e7e;
-    font-size: 1.4rem;
-}
+/* tính độ rộng tổng bên phải 
+bên phải hiện có độ rộng là 641x631
+Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
 
-.hero .content-block .heading {
-    margin: 18px 0 46px;
-    width: 456px;
-    color: #0d1111;
-    font-size: 6.2rem;
-    font-weight: 700;
-    line-height: 1.2; /* 116.129% */
-}
-
-/* Media-block */
 .hero .media-block {
-    width: 42%;
+    width: 55%;
 }
 
-.hero .media-block .logo {
+.hero .media-block .img {
+    display: inline-block;
     width: 576px;
     height: 631px;
+    object-fit: cover;
+}
+
+.hero .sumary-3 .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
     object-fit: cover;
 }
