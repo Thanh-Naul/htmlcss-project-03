@@ -13,6 +13,29 @@ body {
 
 /* Common */
 
+.line-clamp {
+    /* xử lý viết nội dung vượt quá dòng 
+    thì sẽ hiện dấu 3 chấm */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.heading-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    /* xử lý khi khách hàng k viết có khoảng trắng
+    nó sẽ cắt chữ xuống hàng như lúc có khoảng trắng */
+    word-break: break-all;
+}
+
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
@@ -125,11 +148,9 @@ a {
 /* Hero left */
 
 .hero .content-block {
-    width: 45%;
+    width: 51%;
     padding: 93px 136px 93px 0;
-
 }
-
 
 .hero .content-block .title {
     color: #767e7e;
@@ -138,6 +159,7 @@ a {
 }
 
 .content-block .desc {
+    max-width: 374px;
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
@@ -155,7 +177,7 @@ a {
 .content-block .cta-group {
     display: flex;
     align-items: center;
-    margin-top: 52px;
+    margin: 52px 0 93px 0;
 }
 
 .content-block .cta-hero {
@@ -204,7 +226,7 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
 
 .hero .media-block {
     position: relative;
-    width: 55%;
+    width: 49%;
 }
 
 .hero .media-block .img {
@@ -330,6 +352,74 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     font-weight: 500;
 }
 
-
 /* Featured */
 
+.featured {
+    padding: 130px 0;
+}
+
+.featured .info {
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.featured .info .title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.featured .info .heading {
+    max-width: 100%;
+    margin: 18px 0;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.featured .info .desc {
+    max-width: 100%;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* feature-list */
+.featured .item-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured .item .heading {
+    margin: 26px 0 16px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.featured .list .item:nth-child(2) {
+    margin: 0 0 0 209px;
+}
+
+.featured .list .item:nth-child(3) {
+    margin: 0 143px 0 200px;
+}
+
+.featured .item .desc {
+    max-width: 224px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.69; /* 168.75% */
+}
+.featured .item .desc-1 {
+    width: 168px;
+}
+
+.featured .item .icon {
+    width: 102px;
+    height: 106px;
+    flex-shrink: 0;
+}
