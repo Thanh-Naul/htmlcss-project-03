@@ -57,7 +57,7 @@ a {
 /* Header */
 
 .header {
-    background: orange;
+    background: #fff;
 }
 
 .header.fixed {
@@ -127,7 +127,69 @@ a {
 
 .hero .content-block {
     width: 45%;
+    padding: 93px 71px 93px 0;
 }
+
+.content-block .desc {
+    width: 285px;
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.content-block .heading {
+    margin: 18px 0 46px 0;
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+.content-block .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.content-block .cta-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 186px;
+    height: 68px;
+    color: #fff;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.content-block .cta-hero:active {
+    color: #1ebfc1;
+    background: #fff;
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
 /* hero right */
 
 /* tính độ rộng tổng bên phải 
@@ -160,13 +222,6 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-/* .hero .sumary-1.sumary-one {
-    position: relative;
-    display: flex;
-    width: 36px;
-    height: 40px;
-} */
-
 .sumary-1 a::after {
     position: absolute;
     content: "";
@@ -187,15 +242,84 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     font-weight: 500;
 }
 
+.hero .media-block .sumary-2 {
+    position: absolute;
+    top: 453px;
+    bottom: 46px;
+    right: 517px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    text-align: center;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
 
+.sumary-2 .title {
+    display: inline-block;
+    margin-top: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sumary-2 .hero-sched {
+    margin: 16px 0 23px;
+}
 
 .hero .media-block .sumary-3 {
     position: absolute;
+    top: 500px;
+    left: 342px;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero .sumary-3 .avatar {
+.sumary-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 35px;
+}
+
+.sumary-3 .avatar-all {
+    display: flex;
     width: 33px;
     height: 33px;
+}
+
+.sumary-3 .title {
+    margin-bottom: 8px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sumary-3 .avatar {
+    min-width: 100%;
+    height: 100%;
+    /* lấy width avatar - cho khoảng cách còn lại bị dư ra bằng -7 */
+    margin-left: -7px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.sumary-3 .avatar:first-child {
+    margin-left: 0;
+}
+
+.sumary-3 .avatar-6 {
+    background: #1ebfc1;
+    color: #fff;
+    /* căn giữa chiều cao line-height */
+    line-height: 33px;
+    /* căn giữa  */
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
