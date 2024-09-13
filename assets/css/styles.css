@@ -116,7 +116,6 @@ a {
     /* khoảng padding top 65 lúc .header body chúng ta cho là 8px
     vì thế lấy 65px -8px = 57px */
     padding: 57px 0 65px;
-    background: #fff;
 }
 
 .hero .body {
@@ -127,13 +126,20 @@ a {
 
 .hero .content-block {
     width: 45%;
-    padding: 93px 71px 93px 0;
+    padding: 93px 136px 93px 0;
+
+}
+
+
+.hero .content-block .title {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .content-block .desc {
-    width: 285px;
     color: #767e7e;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.78; /* 177.778% */
 }
@@ -323,3 +329,7 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     font-size: 1rem;
     font-weight: 500;
 }
+
+
+/* Featured */
+
