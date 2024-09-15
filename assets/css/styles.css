@@ -370,7 +370,7 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
 }
 
 .featured .info .heading {
-    max-width: 100%;
+    min-width: calc(100% - 14px);
     margin: 18px 0;
     color: #0d1111;
     font-size: 4.2rem;
@@ -422,4 +422,378 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     width: 102px;
     height: 106px;
     flex-shrink: 0;
+}
+
+/* Courses */
+.course {
+    padding: 130px 0;
+    /* background: orange; */
+}
+
+.course .info .tilte {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.course .info .heading {
+    margin: 18px 0 19px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.course .info .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course .group .desc {
+    max-width: 525px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.78; /* 177.778% */
+}
+
+.course .group .view {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.course .item-list {
+    display: flex;
+    gap: 47px;
+    margin-top: 79px;
+}
+.course .item {
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+}
+
+.course .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course .item-info:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course .item .img {
+    width: 359px;
+    height: 393px;
+    flex-shrink: 0;
+    object-fit: cover;
+    vertical-align: baseline;
+    border-radius: 8px;
+    opacity: 0.35;
+    background: #d0efed;
+}
+
+.course .item-info {
+    position: absolute;
+    top: 322px;
+    left: 17px;
+    right: 17px;
+    bottom: 124px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.course .item-info .heading {
+    margin: 18px 165px 16px 25px;
+    width: 100%;
+}
+
+.course .item-info .heading a {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course .item-info .foot {
+    margin-left: 25px;
+}
+
+.course .foot .price {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course .foot .price span {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.course .foot .desc {
+    margin: 6px 0 18px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.course .coment {
+    display: flex;
+    margin-left: 25px;
+}
+.course .coment .group {
+    display: flex;
+    align-items: center;
+}
+
+.course .coment .group .cmt {
+    padding: 0 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Sub */
+
+.sub {
+    padding: 261px 0 0;
+}
+.sub .sub-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub .info .title {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.sub .info .desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+/* Question */
+.ques {
+    padding: 264px 0 0;
+}
+
+.ques .ques-all {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Question-A */
+.ques .ques-a {
+    width: 36%;
+    margin-right: 72px;
+}
+
+.ques .ques-a .desc {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.ques .ques-a .st {
+    margin-top: 33px;
+    position: relative;
+    left: 14px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.ques .ques-a .st span {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.ques .ques-a .st::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -14px;
+    right: 25px;
+    bottom: 6px;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+}
+
+.ques .ques-a .lt {
+    display: flex;
+    margin: 52px 0 37px;
+    gap: 10px;
+}
+
+.ques .ques-a .cta-lr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #2ac9bf;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.ques .ques-a .cta-lr:active {
+    background: rgb(15, 14, 14);
+}
+
+/* Question-B */
+.ques .ques-b {
+    width: 64%;
+    display: flex;
+}
+.ques .ques-b .ava {
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ques .ques-b .one .ava {
+    margin: 166px 0 67px;
+    background: #ffc147;
+}
+
+.ques .ques-b .tow .ava {
+    margin: 0 0 0 66px;
+    width: 92px;
+    height: 92px;
+    background: #1ebfc1;
+}
+
+.ques .ques-b .three .ava {
+    margin: 403px 0 0;
+    background: #ff947a;
+}
+
+.ques .ques-b .four .ava {
+    margin-top: 107px;
+    width: 235px;
+    height: 235px;
+    background: #ff8282;
+}
+
+.ques .ques-b .five .ava {
+    margin: 374px 32px 29px;
+    background: #b1dfdc;
+}
+
+.ques .ques-b .six .ava {
+    margin: 19px 0 0 -51px;
+    width: 110px;
+    height: 110px;
+    background: #bf83ff;
+}
+
+/* About */
+
+.about {
+    padding: 130px 0;
+    background: #def6f5;
+}
+
+.about .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .info .heading {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.about .info .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+
+.about .cta .cta-btn {
+    width: 186px;
+    height: 68px;
+    line-height: 68px;
+    color: #fff;
+    border-radius: 14px;
+    background: #2ac9bf;
+}
+
+.about .cta .cta-btn:active {
+    color: #2ac9bf;
+    background: #fff;
+}
+
+/* Footer */
+
+.footer {
+    padding: 131px 135px 0;
+   
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+    width: 25%;
+}
+
+.footer .column .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .social,
+.footer .column .list {
+    margin-top: 26px;
+}
+
+.footer .social a,
+.footer .column .list a {
+    display: inline-block;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer .social a {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.copyright {
+    padding: 60px 0 50px;
+}
+
+.copyright p {
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 400;
 }
