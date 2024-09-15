@@ -785,7 +785,10 @@ Tính tổng độ rông bên phải: 641 / 1170 (main-content) x 100 = 55%*/
     display: flex;
     margin-bottom: 20px;
     align-items: center;
+    cursor: pointer;
 }
+
+
 
 .copyright {
     padding: 60px 0 50px;
